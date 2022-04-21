@@ -1,0 +1,131 @@
+=========================================== Hướng dẫn sử dụng phần mềm =================================================
+Tổng quan về phần mềm : đây là một phần mềm quản lí hàng hóa trong cửa hàng 
+phần mềm có tổng cộng 12 chức năng cụ thể sẽ được nói ở phần bên dưới.
+
+- Hướng dẫn sử dụng các chức năng trong chương trình
+sau khi mở chương trình ta có Menu như sau : 
+
+=====================MENU======================
+>>1. Them Hang Hoa                             
+>>2. Xoa Hang Hoa                             
+>>3. Sua Hang Hoa                              
+>>4. In Thong Tin Hang Hoa                     
+>>5. Tim Kiem va in Hang Hoa Theo Ma Hang Hoa  
+>>6. Thong ke hang hoa                         
+>>7. sap xep tang dan theo don gia             
+>>8. sap xep giam dan theo don gia             
+>>9. Danh Gia san pham                         
+>>10 Xem Du Lieu Co Trong File                 
+>>11 Them Du Lieu cua danh sach Vao Trong file 
+>>12 Them Du Lieu cua File Vao Trong danh sach 
+>>0. Exit.                                     
+===============================================
+Chọn chức năng:
+
+Chọn chức năng: nhập dữ liệu để chọn chức ( 0 - 12 ) chỉ cho phép kiểu dữ liệu : int.
+
+**lưu ý 
+trong phần mềm đã có sẵn 10 hàng hóa phục vụ mục đích test và có sẵn 10 sản phẩm trong file hanghoa.dat
+
+chức năng đầu tiên Tương ứng với 1 
+================================================= 1 thêm hàng hóa ======================================================
+mô tả chức năng :
+chức năng giúp cho người dùng có thể thêm 1 hàng hóa vào trong danh sách hiện tại. 
+
+một số lưu ý :
+- Mã hàng phải là kiểu dữ liệu String  , mã hàng hóa không được trùng với mã hàng hóa có trong danh sách.
+- Tên hàng phải là kiểu dữ liệu String , tên hàng hóa không được trùng với tên hàng hóa đã có trong danh sách.
+- Số Lượng phải là kiểu dữ liệu int , số lượng không được < 0
+- Đơn Giá phải là kiểu dữ liệu Double , đơn giá không dược < 0
+TH1 : đối với hàng hóa là thực phẩm:
+- Ngày sản xuất phải là kiểu dữ liệu String , phải tuân theo dạng dd/mm/yyyy.
+- Ngày hết hạn phải là kiểu dữ liệu String , phải tuân theo dạng dd/mm/yyyy.
+* lưu ý
+- nếu ngày hết hạn mà có trước ngày sản xuất thì hàng hóa sẽ không hợp lý và không được thêm vào danh sách.
+- nhà cung cấp phải là kiểu dữ liệu String.
+TH2 : đối với hàng hóa là sành sứ 
+- Ngày nhập khẩu phải là kiểu dữ liệu String , phải tuân theo dạng dd/mm/yyyy. 
+- Nhà Sản Xuất phải là kiểu dữ liệu String.
+TH3 : đối với hàng hòa là điện máy 
+- Kw phải là kiểu dữ liệu double , Kw không được < 0
+- Thời Gian Bảo hành phải là kiểu dữ liệu int , Thời Gian bao hành không được < 0 
+
+*** nếu bạn không nhập đúng theo quy tắc , bạn sẽ nhận được thông báo lỗi và sản phẩm của bạn sẽ không được thêm vào.
+
+=================================================== 2 xóa hàng hóa ========================================================
+mô tả chức năng :
+Chức năng giúp cho người dùng có thể xóa một hàng hóa trong danh sách hiện tại.
+
+* lưu ý bạn phải nhập Mã hàng Hóa để chúng tôi có thể xóa hàng hóa 
+mã hàng phải thuộc kiểu dữ liệu String.
+
+=================================================== 3 sửa hàng hóa ======================================================
+mô tả chức năng :
+Chức năng giúp cho người dùng có thể sửa một hàng hóa trong danh sách hiện tại.( cụ thể là tên , số lượng , đơn giá ).
+
+* lưu ý bạn phải nhập Mã hàng Hóa để chúng tôi có thể sửa hàng hóa 
+mã hàng phải thuộc kiểu dữ liệu String.
+
+================================================== 4 in danh sách =======================================================
+mô tả chức năng :
+chức năng giúp người dùng in danh sách hiện tại để xem có dang có bao nhiêu sản phẩm trong dánh sách.
+
+================================================== 5 tìm kiếm hàng hóa ==================================================
+mô tả chức năng :
+Chức năng tìm kiếm hàng hóa có trong kho bằng cách sử dụng Mã hàng của hàng hóa.
+
+* lưu ý bạn phải nhập Mã hàng Hóa để chúng tôi có thể tìm và xuất hàng hóa ra cho bạn 
+mã hàng phải thuộc kiểu dữ liệu String.
+
+================================================== 6 thống kê hàng hóa ===================================================
+mô tả chức năng : 
+chức năng giúp cho người dùng biết được rằng :
+- Tổng số Lượng hàng hóa có trong kho 
+- Tổng Giá trị hàng hóa có trong kho 
+- số lượng hàng hóa từng loại có trong kho
+
+======================================== 7 sắp xếp hàng hóa theo hướng tăng dần theo đơn giá =============================
+mô tả chức năng : 
+Chức năng giúp cho người dùng sắp xếp các hàng hóa trong danh sách theo hướng tăng dần theo đơn giá và sau đó xuất ra màn hình.
+
+======================================== 8 sắp xếp hàng hóa theo hướng giảm dần theo đơn giá =============================
+mô tả chức năng : 
+Chức năng giúp cho người dùng sắp xếp các hàng hóa trong danh sách theo hướng giảm dần theo đơn giá và sau đó xuất ra màn hình.
+
+======================================== 9 đánh giá sản phẩm =============================================================
+mô tả chức năng :
+chức năng giúp cho người dùng đánh giá được hàng hóa nào bán được hàng hóa nào không bán được. 
+
+======================================== 10 xem dữ liệu trong File =======================================================
+mô tả chức năng : 
+chức năng giúp người dùng xem dược dữ liệu đã lưu Trong File tập tin hanghoa.dat
+
+======================================== 11 thêm dữ liệu của danh sách vào trong file ====================================
+mô tả chức năng : 
+Chức năng giúp cho người dùng thêm hàng hóa từ trong danh sách vào file 
+
+** thật tế chức năng này không phải là không thêm sản phẩm có trong danh sách vào File đã tồn tại
+- Mà là tạo ra 1 File mới cùng tên sau đó thêm hàng hóa trong danh sách hiện tại vào. 
+điều đó gây ra hiện tượng mất dữ liệu cũ có trong danh sách mà chưa có trong File
+
+hiện tại em đang chữa cháy bằng cách thực hiện chức năng 12 trước chức năng 11 
+Cụ thể : thêm dữ liệu từ File Trước vào trong danh sách , khi đó khi thực hiện chức năng 11
+tạo File mới sẽ không gây ra mất dữ liệu của hàng hóa trước đó. 
+
+( Thầy thấy em hay không từ Bug tạo ra Tính năng để fix bug. ) ≧◠◡◠≦✌  
+
+======================================== 12 thêm dữ liệu của File vao trong danh sach =====================================
+mô tả chức năng : 
+Chức năng giúp người dùng thêm hàng hóa từ File vào trong danh sách hiện tại 
+
+======================================== 0 để thoát chương trình ==========================================================
+mô tả chức năng :
+dừng chương trình!!!
+
+có 1 số thứ em thắc mắc trong bài tập cuối kì Thầy cho : 
+
+- em không biết chức năng báo cáo cụ thể là nó sẽ làm gì nên em không biết viết nó ra sao.
+
+- dữ liệu VAT dùng để làm gì * Vì em thấy em thấy VAT không có dùng đến làm gì cả.
+- Vd như có chức năng bán hàng thì xuất hóa đơn ra VAT tính tiền hàng hóa còn hợp lý. 
+chứ bỏ VAT vào đó làm gì em không biết nên em cho nó ra rìa luôn  ≧◠◡◠≦✌  
